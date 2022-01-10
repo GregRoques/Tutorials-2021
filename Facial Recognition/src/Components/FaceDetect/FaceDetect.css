@@ -1,0 +1,20 @@
+.bounding-box {
+  position: absolute;
+  box-shadow: 0 0 0 3px #fff inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bounding-box2 {
+  position: absolute;
+  cursor: pointer;
+  z-index: 222;
+  background-image: url('https://vignette.wikia.nocookie.net/nintendo/images/0/02/Question_Block_NSMB.png/revision/latest?cb=20151206055532&path-prefix=en');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: white; */
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "## Video",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregRoques/Exploring-Chat-and-Video-Dependencies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GregRoques/Exploring-Chat-and-Video-Dependencies/issues"
+  },
+  "homepage": "https://github.com/GregRoques/Exploring-Chat-and-Video-Dependencies#readme",
+  "dependencies": {
+    "socket.io": "^1.0"
+  }
+}
