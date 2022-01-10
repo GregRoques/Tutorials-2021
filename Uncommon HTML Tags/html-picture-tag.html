@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .start {
+        opacity: 0;
+    }
+
+    .fadeIn {
+        /* opacity: 0; */
+        animation: .5s forwards show;
+    }
+
+    @keyframes show {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+
+    }
+</style>
+
+<body>
+    <!-- =================================================================================================== -->
+    <!-- Picture Element -->
+    <div>
+        <!-- picture loads images from top to bottom, showing the first one that is true -->
+        <picture id="cat-pics" class="start">
+            <!-- only appears if width is 900px or greater -->
+            <source srcset="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png"
+                media="(min-width:900px)">
+
+
+            <!-- Not all browsers accept web.png, so best to include "type" -->
+            <!-- <source srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Johnrogershousemay2020.webp/1200px-Johnrogershousemay2020.webp.png" type = "image/webp"> -->
+
+            <!-- Instead of top to bottom, you could use the media-query substitue below: -->
+            <!-- <source srcset="logo.png 100w, logo-small.png 50w"> -->
+
+            <img src="https://c0.wallpaperflare.com/preview/557/115/644/shallow-focus-photography-of-cat-thumbnail.jpg"
+                style="width: 400px" onload="fadeIn()">
+        </picture>
+    </div>
+    <script>
+        function fadeIn() {
+            const cats = document.getElementById('cat-pics');
+            // cats.classList.add('start')
+            cats.classList.add('fadeIn')
+        }
+    </script>
+</body>
+
+</html>

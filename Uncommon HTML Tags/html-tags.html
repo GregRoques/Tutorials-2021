@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tag Refresher</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:site_name" content="YouTube">
+    <meta property="og:url" content="https://www.youtube.com/watch?v=iX_QyjdctsQ">
+    <meta property="og:title" content="HTML Tag Refresher">
+    <meta property="og:description"
+        content="There are so many HTML tags that it is nearly impossible to know them all, which means there are tons of tags most people do not know. In this video I talk about the 5 coolest HTML tags that nearly nobody knows about.">
+    <meta property="og:image"
+        content="https://c10.patreonusercontent.com/3/eyJ3Ijo5NjAsIndlIjoxfQ==/patreon-media/p/campaign/2870245/82dc193d6f7d4444bcb88a3049f785a2/1.png?token-time=1641254400&token-hash=5rpaSobCQU0tmouswxAZ78NC5R48COd5KZRsEhCPs1o%3D">
+    <meta property="og:image.width" content="960">
+    <meta property="og:image.height" content="540">
+    <!-- Twitter Specific Open Graph Meta Tags -->
+    <meta property="twitter:card" content="player">
+    <meta property="twitter:site" content="@youtube">
+    <meta property="twitter:url" content="https://www.youtube.com/watch?v=iX_QyjdctsQ">
+    <meta property="twitter:title" content="HTML Tag Refresher">
+    <meta property="twitter:description"
+        content="There are so many HTML tags that it is nearly impossible to know them all, which means there are tons of tags most people do not know. In this video I talk about the 5 coolest HTML tags that nearly nobody knows about.">
+</head>
+
+<body>
+    <form>
+        <!-- =================================================================================================== -->
+        <!-- Form FieldSet with Legend -->
+        <fieldset>
+            <legend>Favorite Music</legend>
+            <div>
+                <label>YouTube</label>
+            </div>
+            <div>
+                <input list="yt-music-channels" type="text" placeholder="Select a Channel">
+                <datalist id="yt-music-channels">
+                    <option value="LoFi Girl">
+                    <option value="Buddah Bar Official">
+                    <option value="Confused Bi-Product of a Misinformed Culture">
+                    <option value="BBC Radio 1">
+                    <option value="My Analog Journal">
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label>Spotify</label>
+            </div>
+            <div>
+                <input list="sp-music-channels" type="text" placeholder="Select a Channel">
+                <datalist id="sp-music-channels">
+                    <option value="Rap Cavier">
+                    <option value="Trip Hop">
+                    <option value="Insecure Official Playlist">
+                    <option value="Indie Pop 2010s">
+                </datalist>
+            </div>
+        </fieldset>
+        <br>
+        <!-- =================================================================================================== -->
+        <!-- cool type fields  -->
+        <fieldset>
+            <legend>Pickers</legend>
+            <div>
+                <label>Color</label>
+            </div>
+            <div>
+                <input type="color">
+            </div>
+            <br>
+            <div>
+                <label>Date</label>
+            </div>
+            <div>
+                <input type="date">
+            </div>
+            <br>
+            <div>
+                <label>Time</label>
+            </div>
+            <div>
+                <input type="time">
+            </div>
+
+        </fieldset>
+    </form>
+    <br>
+    <!-- =================================================================================================== -->
+    <!-- progress element -->
+    <form>
+        <fieldset>
+            <legend>File Upload</legend>
+            <div>
+                <label>Uploading...</label>
+            </div>
+            <div>
+                <progress></progress>
+            </div>
+            <br>
+            <div>
+                <label>50%</label>
+            </div>
+            <div>
+                <progress value="50" max="100"></progress>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <!-- =================================================================================================== -->
+    <!-- Sub & Sup Elements
+        Sub = bottom
+        Sup = Top -->
+    <div>
+        <p>H<sub>2</sub>0</p>
+        <p>0<sup>2</sup></p>
+        <p>X<sup>2</sup> * y<sup>4</sup></p>
+    </div>
+
+</body>
+
+</html>

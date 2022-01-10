@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="add-item">Add Item</button>
+    <ul id="list">
+        <li>
+            <span>Item 1: </span>
+            <span>Content 1</span>
+        </li>
+        <li>
+            <span>Item 2: </span>
+            <span>Content 2</span>
+        </li>
+    </ul>
+
+    <template id="list-item-template">
+        <li>
+            <span class="title">Item: </span>
+            <span class="content">Content</span>
+        </li>
+    </template>
+
+    <script>
+        const template = document.getElementById('list-item-template')
+        const list = document.getElementById('list')
+        const button = document.getElementById('add-item')
+        let itemCount = list.children.length
+
+        button.addEventListener('click', () => {
+            itemCount++
+            if (itemCount < 16) {
+                const item = template.content.cloneNode(true)
+                item.querySelector('.title').innerText = `Item ${itemCount}: `
+                item.querySelector('.content').innerText = `Content ${itemCount}`
+                list.append(item)
+            }
+        })
+    </script>
+
+</body>
+
+</html>
