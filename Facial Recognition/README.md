@@ -104,6 +104,6 @@ There are no doubt more sophisticated mapping packages out there (such as [numjs
 
 You can see the detection at work below, or [click here to watch a video demo](https://www.youtube.com/watch?v=NqeQZmqkXho&list=PLM2GdNHvfSCHPHRWbFlOst-EK8K4wkv5f&index=6).
 
-![Squad at Jazz Fest](/readMe/1.JPG)
+![Squad at Jazz Fest](readMe/1.JPG)
 
-![Squad on hike in Colorado](/readMe/2.JPG)
+![Squad on hike in Colorado](readMe/2.JPG)
